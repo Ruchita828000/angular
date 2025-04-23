@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+   <!-- Container for the registration form -->
+  <div class="container">
+    <!-- Title of the form -->
+    <div class="title">Registration Form</div>
+    <hr>
+    <div class="content">
+      <!-- Registration form -->
+      <form action="#" (ngSubmit)="onFormSubmit(registrationForm)" #registrationForm="ngForm">
+        <div class="user-details">
+          <!-- Input box for full name -->
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="fullName" ngModel>
+          </div>
+          <!-- Input box for username -->
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" name="userName" ngModel>
+          </div>
+          <!-- Input box for email -->
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" ngModel>
+          </div>
+          <!-- Input box for password -->
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" name="pswd" ngModel>
+          </div>
+          <!-- Input box for confirming password -->
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" name="confirmpswd" ngModel>
+          </div>
+          <!-- Input box for date of birth -->
+          <div class="input-box">
+            <span class="details">Date of birth</span>
+            <input type="date" name="dob" name="dob" ngModel>
+          </div>
+        </div>
+        <!-- Button container -->
+        <div class="button-container">
+          <div class="button">
+            <!-- Submit button -->
+            <input type="submit" value="Register">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
