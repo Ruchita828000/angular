@@ -1,0 +1,9 @@
+.red{
+    color: red;
+}
+.text{
+    font-weight: bold;
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
