@@ -9,15 +9,23 @@ import { CommonModule } from '@angular/common';
     imports:[FormsModule,CommonModule]
 })
 export class templateComponent{
-    name:string="";
-    uname:string="";
-    emailAddr:string="";
-    password:any=""
+   user: {
+    name: string;
+    email: string;
+    pswd: string;
+    username: string;
+   } = {
+    name: '',
+    email: '',
+    pswd: '',
+    username: ''
+   };
 
     onFormSubmit(form:NgForm){
-        // console.log(form.value.fullName,'name')
-        // console.log(form.value.userName,'username')
-        // console.log(form.value.email,'email')
+        console.log(form,);
+        console.log(this.user);
+        
+      
         
 
     }
